@@ -18,5 +18,4 @@ def search(request):
     number = params.get('n', 10)
     rr = requests.get(_get_url(query, start, number))
     content = rr.json()
-    content = json.loads(content['body'])
-    return HttpResponse(json.dumps(content), content_type='application/json')
+    return HttpResponse(json.dumps(content['body']), content_type='application/json')
