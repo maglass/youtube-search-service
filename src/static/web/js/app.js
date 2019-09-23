@@ -4,8 +4,8 @@ new Vue({
     data: {
         query: '다이어트',
         start: 0,
-        first_page_doc_number: 10,
-        page_doc_number: 20,
+        first_page_doc_number: 20,
+        page_doc_number: 30,
         documents: [],
         page: 0,
         max_page: 5
