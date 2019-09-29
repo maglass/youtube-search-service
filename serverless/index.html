@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Youtube Search</title>
+    <link rel="stylesheet" href="static/css/index.css">
+</head>
+
+<body>
+<div id="app">
+    <div id="inputArea">
+        <input v-model="query" v-on:keyup.enter="pressSearchBtn()" type="text"/>
+        <input v-on:click="pressSearchBtn()" type="submit" value="GO">
+    </div>
+    <hr>
+
+    <div id="documentsArea">
+        <ul>
+            <li v-for="(doc, index) in documents">
+                <div class="line-one">
+                    <img v-bind:src="doc.img_url">
+                    <a id="title" v-bind:href="doc.url" v-html="doc.title" target="_blank"></a>
+                    <br>
+                    <div id="information">
+                        <a class="channelName" v-bind:href="doc.channel_url" v-html="doc.channel_name"
+                           target="_blank"></a>
+                        조회수 ${displayViews(doc.views)}
+                        <p class="description">${doc.summary}</p>
+                    </div>
+
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="static/js/vue.min.js"></script>
+<script src="static/js/axios.min.js"></script>
+<script src="static/js/app.js"></script>
+</body>
+</html>

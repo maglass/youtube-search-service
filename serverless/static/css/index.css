@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-overflow-scrolling: auto; /* Stops scrolling immediately */
+}
+
+
+input {
+    position: relative;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    height: 20px;
+    width: 500px;
+    border: 1px solid #eaeaea;
+    outline: none;
+}
+
+input:hover {
+    border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9;
+}
+
+input:focus {
+    border-color: #4d90fe;
+}
+
+input[type="submit"] {
+    border-radius: 2px;
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    color: #757575;
+    cursor: default;
+    font-size: 14px;
+    font-weight: bold;
+    width: 90px;
+    height: 36px;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    color: #222;
+}
+
+#title {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#information {
+    color: #383838;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+
+#information a {
+    color: #383838;
+    text-decoration: none;
+}
+
+#inputArea {
+
+}
+
+#documentsArea {
+
+}
+
+#documentsArea li {
+    overflow: hidden;
+    font-size: 12px;
+    width: 800px;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+#documentsArea li img {
+    float: left;
+    width: 246px;
+    height: 140px;
+    margin: 0 15px 0 0;
+}
+
+hr {
+    float: left;
+    color: #9B9E9B;
+    border-style: inset;
+    margin-left: 10px;
+    border-width: 0.2mm;
+    width: 60%;
+    opacity: 0.2;
+}
+
+
