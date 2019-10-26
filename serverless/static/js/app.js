@@ -70,7 +70,6 @@ new Vue({
                 }
             }
         },
-
         scroll() {
             window.onscroll = () => {
                 let bottomOfWindow = document.documentElement.scrollTop + window.innerHeight > (document.documentElement.offsetHeight - 10);
